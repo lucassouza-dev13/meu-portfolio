@@ -138,3 +138,23 @@ header.rolou{box-shadow:0 6px 24px rgba(0,0,0,.35)}
 .btn svg{width:1.15rem;height:1.15rem;fill:currentColor;vertical-align:-.2em;margin-right:.5rem}
 .zap{display:inline-flex;align-items:center;gap:.5rem}
 .zap svg{width:1.25rem;height:1.25rem;fill:currentColor}
+
+/* selo de disponibilidade */
+.disponivel{display:inline-flex;align-items:center;gap:.6rem;margin-bottom:1.2rem;padding:.4rem .9rem;position:relative;
+  border:1px solid var(--line);border-radius:2rem;background:rgba(139,92,246,.1);font-size:.9rem;color:var(--accent-soft);
+  animation:subir .8s ease both}
+.ponto{width:.55rem;height:.55rem;border-radius:50%;background:#4ade80;animation:pulso 2s infinite}
+@keyframes pulso{0%{box-shadow:0 0 0 0 rgba(74,222,128,.6)}70%{box-shadow:0 0 0 .6rem rgba(74,222,128,0)}100%{box-shadow:0 0 0 0 rgba(74,222,128,0)}}
+
+/* atividade no GitHub */
+.grafico{background:var(--surface);border:1px solid var(--line);border-radius:1rem;padding:1rem;overflow-x:auto}
+.grafico img{display:block;min-width:42rem;width:100%;height:auto}
+.repos{display:grid;gap:1rem;margin-top:1.5rem}
+.repo{display:flex;flex-direction:column;gap:.4rem;padding:1.1rem;background:var(--surface);border:1px solid var(--line);
+  border-radius:1rem;text-decoration:none;transition:transform .3s,border-color .3s}
+.repo:hover{transform:translateY(-4px);border-color:var(--accent)}
+.repo strong{font-family:var(--display);font-size:1.1rem}
+.repo .desc{color:var(--muted);font-size:.95rem}
+.repo .meta{color:var(--accent-soft);font-size:.85rem;margin-top:auto}
+.gh-link{display:inline-block;margin-top:1.5rem;color:var(--accent-soft);font-weight:500}
+@media (min-width:48rem){.repos{grid-template-columns:repeat(2,1fr)}}
