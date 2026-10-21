@@ -98,3 +98,77 @@ if (mascote && balao) {
     // se a API falhar, a seção continua escondida
   }
 })();
+
+// faixa de tecnologias: repete a lista para o loop ficar contínuo
+const trilho = document.querySelector(".faixa-trilho");
+if (trilho) {
+  const originais = [...trilho.children];
+  for (let i = 0; i < 3; i++) {
+    originais.forEach((el) => {
+      const copia = el.cloneNode(true);
+      copia.setAttribute("aria-hidden", "true");
+      trilho.appendChild(copia);
+    });
+  }
+}
+
+// barra de progresso de rolagem
+const barra = document.getElementById("progresso");
+if (barra) {
+  const atualizar = () => {
+    const max = document.documentElement.scrollHeight - window.innerHeight;
+    barra.style.transform = `scaleX(${max > 0 ? window.scrollY / max : 0})`;
+  };
+  window.addEventListener("scroll", atualizar, { passive: true });
+  window.addEventListener("resize", atualizar);
+  atualizar();
+}
+
+// luz que segue o mouse e cards que se inclinam (só com mouse e sem "reduzir movimento")
+const podeMover = matchMedia("(hover: hover)").matches && !matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+if (podeMover) {
+  // inclinação dos cards (projetos e repositórios do GitHub)
+  const GRAUS = 15;
+  document.addEventListener("mousemove", (e) => {
+    const card = e.target.closest(".card, .repo");
+    if (!card) return;
+    card.classList.add("tilt");
+    const r = card.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    card.style.setProperty("--ry", `${x * GRAUS * 2}deg`);
+    card.style.setProperty("--rx", `${-y * GRAUS * 2}deg`);
+  }, { passive: true });
+
+  document.addEventListener("mouseout", (e) => {
+    const card = e.target.closest(".card, .repo");
+    if (!card || card.contains(e.relatedTarget)) return;
+    card.style.setProperty("--rx", "0deg");
+    card.style.setProperty("--ry", "0deg");
+  });
+
+  // luz que acompanha o cursor com um atraso suave
+  const luz = document.getElementById("luz-mouse");
+  if (luz) {
+    let alvoX = 0, alvoY = 0, x = 0, y = 0, rodando = false, primeiro = true;
+
+    const mover = () => {
+      x += (alvoX - x) * 0.12;
+      y += (alvoY - y) * 0.12;
+      luz.style.transform = `translate3d(${x}px, ${y}px, 0)`;
+      if (Math.abs(alvoX - x) + Math.abs(alvoY - y) > 0.5) requestAnimationFrame(mover);
+      else rodando = false;
+    };
+
+    window.addEventListener("mousemove", (e) => {
+      alvoX = e.clientX;
+      alvoY = e.clientY;
+      if (primeiro) { x = alvoX; y = alvoY; primeiro = false; luz.style.opacity = "1"; }
+      if (!rodando) { rodando = true; requestAnimationFrame(mover); }
+    }, { passive: true });
+
+    document.documentElement.addEventListener("mouseleave", () => { luz.style.opacity = "0"; });
+    document.documentElement.addEventListener("mouseenter", () => { luz.style.opacity = "1"; });
+  }
+}

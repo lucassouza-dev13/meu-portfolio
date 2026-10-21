@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Lucas Souza | Desenvolvedor full-stack</title>
-<link rel="icon" type="image/svg+xml" href="favicon.svg"
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
 <meta name="description" content="Desenvolvedor full-stack que cria sites, landing pages e sistemas web com login e integração de APIs.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,6 +12,8 @@
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
+ <div class="progresso" id="progresso"></div> 
+ <div class="luz-mouse" id="luz-mouse"></div>
 
 <header>
   <div class="wrap">
@@ -34,7 +36,7 @@
       </div>
       <div class="disponivel">
       <span class="ponto"></span>Disponível para novos projetos</div>
-      <h1>Transformo ideias em solução de software.</h1>
+      <h1>Transformo <span class="grad">ideias</span> em <span class="grad">solução de software</span>.</h1>
       <p>Sou Lucas, desenvolvedor full-stack. Crio landing pages, sites institucionais e sistemas com login e integração de APIs, do layout ao deploy.</p>
       <div class="actions">
         <a class="btn primary" href="#projetos">Ver projetos</a>
@@ -42,6 +44,12 @@
       </div>
     </div>
   </section>
+
+  <div class="faixa" aria-label="Tecnologias que utilizo">
+    <div class="faixa-trilho">
+       <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Node.js</span><span>Express</span><span>PostgreSQL</span><span>Supabase</span><span>Vercel</span><span>Render</span><span>Git</span>
+    </div>
+  </div>
 
   <section id="projetos">
     <div class="wrap">
