@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Currículo | Lucas Alves de Souza</title>
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+:root{--roxo:#6d3fd6;--escuro:#1b1030;--cinza:#4a4458}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#14101f;font:400 10.5pt/1.5 "DM Sans",Arial,sans-serif;color:var(--escuro);padding:1.5rem 1rem 3rem}
+.barra{max-width:210mm;margin:0 auto 1rem;display:flex;justify-content:space-between;align-items:center;gap:1rem}
+.barra a,.barra button{font:500 .95rem "DM Sans",sans-serif;border-radius:.6rem;padding:.7rem 1.1rem;cursor:pointer;text-decoration:none}
+.barra button{background:#8b5cf6;color:#fff;border:0}
+.barra a{color:#c4b5fd;border:1px solid #2e2547}
+.folha{max-width:210mm;margin:0 auto;background:#fff;padding:16mm 18mm;border-radius:6px}
+h1{font:800 24pt/1.1 "Bricolage Grotesque",Arial,sans-serif}
+.cargo{color:var(--roxo);font-size:11.5pt;margin:.2rem 0 .3rem}
+.contato{font-size:9pt;color:var(--cinza)}
+a.l{color:var(--roxo);text-decoration:none}
+hr{border:0;border-top:1.5px solid var(--roxo);margin:.7rem 0 0}
+h2{font:700 10.5pt "DM Sans",sans-serif;color:var(--roxo);letter-spacing:.04em;margin:1rem 0 .3rem;text-transform:uppercase}
+h3{font:700 10.5pt "DM Sans",sans-serif;margin-top:.6rem}
+.meta{font-size:9pt;color:var(--cinza)}
+p{font-size:10pt}
+ul{margin:.2rem 0 0 1.1rem}
+li{margin-bottom:.15rem;font-size:9.8pt}
+li::marker{color:var(--roxo)}
+@media print{
+  @page{size:A4;margin:0}
+  body{background:#fff;padding:0}
+  .barra{display:none}
+  .folha{max-width:none;border-radius:0;padding:14mm 18mm}
+}
+</style>
+</head>
+<body>
+
+<div class="barra">
+  <a href="index.html">← Voltar ao portfólio</a>
+  <button onclick="window.print()">Salvar como PDF</button>
+</div>
+
+<main class="folha">
+  <h1>Lucas Alves de Souza</h1>
+  <p class="cargo">Analista de Sistemas | Desenvolvedor Full-Stack</p>
+  <p class="contato">São Paulo, SP · WhatsApp (11) 95448-8014 · <a class="l" href="mailto:la1765035@gmail.com">la1765035@gmail.com</a></p>
+  <p class="contato">
+    <a class="l" href="https://www.linkedin.com/in/lucas-alves-6873712a8">linkedin.com/in/lucas-alves-6873712a8</a> ·
+    <a class="l" href="https://github.com/lucassouza-dev13">github.com/lucassouza-dev13</a> ·
+    <a class="l" href="https://meu-portfolio-six-indol.vercel.app/">meu-portfolio-six-indol.vercel.app</a>
+  </p>
+  <hr>
+
+  <h2>Resumo</h2>
+  <p>Analista de Sistemas na Orinter Tour &amp; Travel, com atuação em análise de incidentes, suporte técnico, integrações via APIs e validação de regras de negócio. Experiência em desenvolvimento e manutenção de aplicações, integração com bancos de dados, versionamento de código e deploy. Interesse em desenvolvimento de software, integração de sistemas, arquitetura de soluções e desenvolvimento web. Busco oportunidades como desenvolvedor ou em áreas relacionadas.</p>
+
+  <h2>Experiência profissional</h2>
+  <h3>Analista de Sistemas — Orinter Tour &amp; Travel (atual)</h3>
+  <ul>
+    <li>Análise de incidentes e suporte técnico em sistemas integrados.</li>
+    <li>Integrações via APIs e investigação de problemas em sistemas integrados.</li>
+    <li>Validação de regras de negócio.</li>
+    <li>Implementação de melhorias e comunicação com fornecedores para garantir a estabilidade e o funcionamento das integrações.</li>
+  </ul>
+
+  <h2>Projetos</h2>
+  <h3>LusTV Ratings — plataforma para catalogar e avaliar filmes, séries, animes e jogos</h3>
+  <p class="meta"><a class="l" href="https://catalogo-filmes-sand.vercel.app/">catalogo-filmes-sand.vercel.app</a> · <a class="l" href="https://github.com/lucassouza-dev13/catalogo-filmes">github.com/lucassouza-dev13/catalogo-filmes</a></p>
+  <ul>
+    <li>Autenticação JWT com recuperação de senha por e-mail, listas personalizadas, feed da comunidade, perfis públicos e conquistas.</li>
+    <li>Scroll infinito e integração com as APIs TMDB e IGDB. Front-end na Vercel e back-end na Render.</li>
+    <li><b>Stack:</b> JavaScript, Node.js, Express, PostgreSQL (Supabase), JWT.</li>
+  </ul>
+
+  <h3>App Vendas Diárias — gerenciamento e acompanhamento de vendas</h3>
+  <ul>
+    <li>Aplicação web com API REST em Node.js e Express, banco PostgreSQL e integração entre front-end e back-end.</li>
+    <li><b>Stack:</b> HTML, CSS, JavaScript, Node.js, Express, PostgreSQL.</li>
+  </ul>
+
+  <h3>Intranet corporativa — empresa de turismo</h3>
+  <ul>
+    <li>Intranet com informações internas, metas e dashboards; modelagem do banco de dados do zero e migração de todas as informações.</li>
+    <li><b>Stack:</b> Node.js, PostgreSQL, Git.</li>
+  </ul>
+
+  <h2>Habilidades técnicas</h2>
+<p><b>Desenvolvimento:</b> HTML, CSS, JavaScript (responsivo e mobile first), Node.js, Express, APIs REST<br>
+<b>Banco de dados:</b> PostgreSQL, Supabase, modelagem e migração de dados<br>
+<b>Integrações e APIs:</b> integração com APIs de terceiros e de fornecedores, autenticação JWT, análise de requisições e respostas (JSON) e de logs<br>
+<b>Sistemas e suporte:</b> análise de incidentes e de causa raiz, investigação de problemas em sistemas integrados, validação de regras de negócio, documentação técnica<br>
+<b>Metodologia:</b> testes e homologação, levantamento de requisitos, metodologias ágeis.<br>
+<b>Ferramentas e deploy:</b> Git, GitHub, Vercel, Render</p>
+
+  <h2>Formação</h2>
+  <p><b>Análise e Desenvolvimento de Sistemas</b> — UNINOVE (concluído em 2026)</p>
+</main>
+
+</body>
+</html>
