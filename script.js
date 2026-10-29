@@ -172,3 +172,70 @@ if (podeMover) {
     document.documentElement.addEventListener("mouseenter", () => { luz.style.opacity = "1"; });
   }
 }
+
+/* ==== IDIOMAS ==== */
+const traducoes = {
+  pt: {
+    nav_projects: "Projetos",
+    nav_about: "Sobre",
+    nav_services: "Serviços",
+    nav_contact: "Contato"
+  },
+  en: {
+    nav_projects: "Projects",
+    nav_about: "About",
+    nav_services: "Services",
+    nav_contact: "Contact"
+  },
+  es: {
+    nav_projects: "Proyectos",
+    nav_about: "Sobre mí",
+    nav_services: "Servicios",
+    nav_contact: "Contacto"
+  }
+};
+
+function aplicarIdioma(idioma) {
+  if (!traducoes[idioma]) return;
+
+  document;documentElement.lang = idioma === "pt"
+  ? "pt-BR"
+  : idioma === "en"
+  ? "en"
+  : "es";
+
+ document.querySelectorAll("[data-i18n]").forEach((elemento) => {
+    const chave = elemento.dataset.i18n;
+    const texto = traducoes[idioma][chave];
+
+    if (texto) elemento.textContent = texto;
+  });
+
+  document.querySelectorAll(".idioma-btn").forEach((botao) => {
+    const selecionado = botao.dataset.lang === idioma;
+
+    botao.classList.toggle("ativo", selecionado);
+    botao.setAttribute("aria-pressed", String(selecionado));
+  });
+
+  try {
+    localStorage.setItem("idioma-portfolio", idioma);
+  } catch (e) {}
+}
+
+document.querySelectorAll(".idioma-btn").forEach((botao) => {
+  botao.addEventListener("click", () => {
+    aplicarIdioma(botao.dataset.lang);
+  });
+});
+
+let idiomaInicial = "pt";
+
+try {
+  const idiomaSalvo = localStorage.getItem("idioma-portfolio");
+  if (idiomaSalvo && traducoes[idiomaSalvo]) {
+    idiomaInicial = idiomaSalvo;
+  }
+} catch (e) {}
+
+aplicarIdioma(idiomaInicial);
