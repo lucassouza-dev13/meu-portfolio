@@ -302,33 +302,15 @@ header .wrap {
   min-width: 2.8rem;
 }
 
-/* Ajuste do cabeçalho e idiomas no desktop */
-@media (min-width: 48rem) {
-  header .wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 1rem;
-  }
+.bandeira {
+  display: inline-block;
+  width: 1.25rem;
+  height: 0.9rem;
+  object-fit: cover;
+  flex-shrink: 0;
+  border-radius: 2px;
+}
 
-  header nav {
-    display: flex;
-    flex: 1;
-    justify-content: center;
-    gap: 1rem;
-  }
-
-  .seletor-idioma {
-    display: flex !important;
-    flex-shrink: 0;
-    visibility: visible !important;
-    opacity: 1 !important;
-  }
-
-  .idioma-btn {
-    display: inline-flex !important;
-    visibility: visible !important;
-    opacity: 1 !important;
-    white-space: nowrap;
-  }
+.idioma-btn {
+  gap: 0.4rem;
 }
