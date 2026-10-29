@@ -231,7 +231,7 @@ body::before{
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: 0.35;
+  gap: 0.35rem;
   padding: 0.4rem 0.55rem;
   border: 1px solid var(--line);
   border-radius: 0.5rem;
@@ -284,4 +284,51 @@ body::before{
   background-clip: text;
   -webkit-text-fill-color: transparent;
   color: transparent;
+}
+
+header .wrap {
+  gap: 1rem;
+}
+
+.seletor-idioma {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.idioma-btn {
+  white-space: nowrap;
+  min-width: 2.8rem;
+}
+
+/* Ajuste do cabeçalho e idiomas no desktop */
+@media (min-width: 48rem) {
+  header .wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  header nav {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    gap: 1rem;
+  }
+
+  .seletor-idioma {
+    display: flex !important;
+    flex-shrink: 0;
+    visibility: visible !important;
+    opacity: 1 !important;
+  }
+
+  .idioma-btn {
+    display: inline-flex !important;
+    visibility: visible !important;
+    opacity: 1 !important;
+    white-space: nowrap;
+  }
 }
