@@ -272,3 +272,16 @@ body::before{
     font-size: 0.75rem;
   }
 }
+
+.grad {
+  background: linear-gradient(
+    90deg,
+    var(--accent-soft),
+    var(--accent),
+    #b048ec
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
