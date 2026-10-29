@@ -198,11 +198,13 @@ const traducoes = {
 function aplicarIdioma(idioma) {
   if (!traducoes[idioma]) return;
 
-  document;documentElement.lang = idioma === "pt"
+  
+document.documentElement.lang = idioma === "pt"
   ? "pt-BR"
   : idioma === "en"
-  ? "en"
-  : "es";
+    ? "en"
+    : "es";
+
 
  document.querySelectorAll("[data-i18n]").forEach((elemento) => {
     const chave = elemento.dataset.i18n;
