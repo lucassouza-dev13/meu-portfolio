@@ -17,20 +17,44 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 </head>
 
 <body>
- <div class="progresso" id="progresso"></div> 
- <div class="luz-mouse" id="luz-mouse"></div>
+  <div class="progresso" id="progresso"></div>
+  <div class="luz-mouse" id="luz-mouse"></div>
 
-<header>
-  <div class="wrap">
-    <a class="logo" href="#topo">Lucas Souza</a>
-    <nav aria-label="Principal">
-      <a href="#projetos">Projetos</a>
-      <a href="#sobre">Sobre</a>
-      <a href="#servicos">Serviços</a>
-      <a href="#contato">Contato</a>
-    </nav>
-  </div>
-</header>
+  <header>
+    <div class="wrap">
+      <a class="logo" href="#topo">Lucas Souza</a>
+
+      <nav aria-label="Principal">
+        <a href="#projetos" data-i18n="nav_projects">Projetos</a>
+        <a href="#sobre" data-i18n="nav_about">Sobre</a>
+        <a href="#servicos" data-i18n="nav_services">Serviços</a>
+        <a href="#contato" data-i18n="nav_contact">Contato</a>
+      </nav>
+
+      <div class="seleto-idioma" aria-label="Selecionar idioma">
+        <button
+        type="button"
+        class="idioma-btn ativo"
+        data-lang="pt"
+        aria-label="Português"
+        aria-pressed="true"
+        >
+         🇧🇷 PT
+      </button>
+
+    <button
+    type="button"
+    class="idioma-btn"
+    data-lang="en"
+    aria-label="English"
+    aria-pressed="false"
+    >
+    🇺🇸 EN
+       </button>
+      </div>
+    </div>
+  </header>
+</body>
 
 <main id="topo">
   <section class="hero">

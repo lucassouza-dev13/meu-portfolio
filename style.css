@@ -218,3 +218,57 @@ body::before{
   transform:perspective(900px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg)) translateY(var(--ty,0px));
   transition:opacity .7s ease,transform .15s ease-out,border-color .3s,box-shadow .3s}
 .js .card.tilt.visivel:hover,.repo.tilt:hover{--ty:-6px}
+
+/* Idiomas */
+.seletor-idioma {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-shrink: 0;
+}
+
+.idioma-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35;
+  padding: 0.4rem 0.55rem;
+  border: 1px solid var(--line);
+  border-radius: 0.5rem;
+  background: var(--surface);
+  color: var(--muted);
+  font: 600 0.8rem var(--body);
+  cursor: pointer;
+  transition: color 0.2s, border-color 0.2s, background 0.2s;
+}
+
+.idioma-btn:hover,
+.idioma-btn.ativo {
+  color: var(--text);
+  border-color: var(--accent);
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.idioma-btn:focus-visible {
+  outline: 2px solid var(--accent-soft);
+  outline-offset: 3px;
+}
+
+@media (max-width: 25rem) {
+  header .wrap {
+    width: calc(100% - 1.25rem);
+  }
+
+  .logo {
+    font-size: 0.95rem;
+  }
+
+  .seletor-idioma {
+    gap: 0.2rem;
+  }
+
+  .idioma-btn {
+    padding: 0.35rem;
+    font-size: 0.75rem;
+  }
+}
