@@ -67,23 +67,59 @@ window.va = window.va || function () { (window.vaq = window.vaq || []).push(argu
 </body>
 
 <main id="topo">
-  <section class="hero">
-    <div class="wrap">
-      <div class="avatar">
-        <img src="img/foto.png" alt="Avatar de Lucas Souza" onerror="this.remove()">
-        <span>LS</span>
-      </div>
-      <div class="disponivel">
-      <span class="ponto"></span>Disponível para novos projetos</div>
-      <h1>Transformo <span class="grad">ideias</span> em <span class="grad">solução de software</span>.</h1>
-      <p>Sou Lucas, desenvolvedor full-stack. Crio landing pages, sites institucionais e sistemas com login e integração de APIs, do layout ao deploy.</p>
-      <div class="actions">
-        <a class="btn primary" href="#projetos">Ver projetos</a>
-        <a class="btn" target="_blank" rel="noopener" href="https://wa.me/5511954488014?text=Ol%C3%A1%20Lucas%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto.">Entrar em contato</a>
-        <a class="btn" href="curriculo-lucas-souza.pdf" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/></svg>Verificar currículo</a>
-      </div>
+ 
+<section class="hero">
+  <div class="wrap">
+    <div class="avatar">
+      <img src="img/foto.png" alt="Avatar de Lucas Souza" onerror="this.remove()">
+      <span>LS</span>
     </div>
-  </section>
+
+    <div class="disponivel">
+      <span class="ponto"></span>
+      <span data-i18n="hero_available">Disponível para novos projetos</span>
+    </div>
+
+    <h1 data-i18n="hero_title">
+      Transformo <span class="grad">ideias</span> em
+      <span class="grad">solução de software</span>.
+    </h1>
+
+    <p data-i18n="hero_description">
+      Sou Lucas, desenvolvedor full-stack. Crio landing pages, sites institucionais e sistemas com login e integração de APIs, do layout ao deploy.
+    </p>
+
+    <div class="actions">
+      <a class="btn primary" href="#projetos" data-i18n="hero_projects">
+        Ver projetos
+      </a>
+
+      <a
+        class="btn"
+        target="_blank"
+        rel="noopener"
+        href="https://wa.me/5511954488014?text=Ol%C3%A1%20Lucas%2C%20vi%20seu%20portf%C3%B3lio%20e%20quero%20conversar%20sobre%20um%20projeto."
+        data-i18n="hero_contact"
+      >
+        Entrar em contato
+      </a>
+
+      <a
+        class="btn"
+        href="curriculo-lucas-souza.pdf"
+        target="_blank"
+        rel="noopener"
+        data-i18n="hero_resume"
+      >
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path d="M19 9h-4V3H9v6H5l7 7 7-7zM5 18v2h14v-2H5z"/>
+        </svg>
+        Verificar currículo
+      </a>
+    </div>
+  </div>
+</section>
+
 
   <div class="faixa" aria-label="Tecnologias que utilizo">
     <div class="faixa-trilho">
