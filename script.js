@@ -101,6 +101,7 @@ const traducoes = {
     service_api_desc: "Pagamentos, catálogos e serviços de terceiros conectados ao seu projeto.",
 
     projects_title: "Projetos",
+    greenmint_desc: "Marketplace de NFTs desenvolvido com React e TypeScript, com catálogo interativo, filtros, carrinho de compras, autenticação simulada, checkout e testes automatizados.",
     lustv_desc: "Plataforma para catalogar e avaliar filmes, séries, animes e jogos, com contas de usuário, listas personalizadas, feed da comunidade, perfis públicos e conquistas.",
     lustv_feature1: "Scroll infinito em todas as abas com IntersectionObserver e paginação real na API de jogos.",
     lustv_feature2: "Autenticação JWT e recuperação de senha por e-mail.",
@@ -159,7 +160,8 @@ const traducoes = {
     service_api_title: "API integration",
     service_api_desc: "Payments, catalogs, and third-party services connected to your project.",
 
-    projects_title: "Projects",
+    projects_title: "Projects", 
+    greenmint_desc: "NFT marketplace built with React and TypeScript, featuring an interactive catalog, filters, shopping cart, simulated authentication, checkout, and automated testing.",
     lustv_desc: "A platform for cataloging and rating movies, TV shows, anime, and games, featuring user accounts, custom lists, a community feed, public profiles, and achievements.",
     lustv_feature1: "Infinite scrolling across all tabs using IntersectionObserver, with real pagination for the games API.",
     lustv_feature2: "JWT authentication and email password recovery.",
@@ -219,6 +221,7 @@ const traducoes = {
     service_api_desc: "Pagos, catálogos y servicios de terceros conectados a tu proyecto.",
 
     projects_title: "Proyectos",
+    greenmint_desc: "Marketplace de NFTs desarrollado con React y TypeScript, con catálogo interactivo, filtros, carrito de compras, autenticación simulada, proceso de compra y pruebas automatizadas.",
     lustv_desc: "Plataforma para catalogar y valorar películas, series, anime y videojuegos, con cuentas de usuario, listas personalizadas, feed de la comunidad, perfiles públicos y logros.",
     lustv_feature1: "Desplazamiento infinito en todas las pestañas mediante IntersectionObserver y paginación real en la API de videojuegos.",
     lustv_feature2: "Autenticación JWT y recuperación de contraseña por correo electrónico.",
@@ -266,8 +269,15 @@ const descricoesRepos = {
     pt: "Portfólio pessoal para apresentar meus projetos e habilidades como desenvolvedor.",
     en: "Personal portfolio showcasing my projects and developer skills.",
     es: "Portafolio personal para presentar mis proyectos y habilidades como desarrollador."
-  }
+  },
+
+"greenmint-nft-marketplace": {
+  pt: "Marketplace de NFTs desenvolvido com React, TypeScript, TanStack e Tailwind CSS, com catálogo interativo, carrinho, checkout e autenticação simulada.",
+  en: "NFT marketplace built with React, TypeScript, TanStack, and Tailwind CSS, featuring an interactive catalog, shopping cart, checkout, and simulated authentication.",
+  es: "Marketplace de NFTs desarrollado con React, TypeScript, TanStack y Tailwind CSS, con catálogo interactivo, carrito de compras, proceso de compra y autenticación simulada."
+},
 };
+
 
 function obterIdiomaAtual() {
   try {
