@@ -90,6 +90,14 @@ const traducoes = {
     about_p1: "Sou formado em Análise e Desenvolvimento de Sistemas e gosto de transformar ideias em projetos que funcionam de verdade. Desenvolvo soluções do banco de dados até a publicação, sempre buscando aprender algo novo pelo caminho.",
     about_p2: "Gosto de um código organizado, sites rápidos e experiências que funcionam bem tanto no computador quanto no celular.",
 
+
+    technologies_title: "Tecnologias & Ferramentas",
+    tech_frontend: "Frontend",
+    tech_backend: "Backend",
+    tech_database: "Banco de Dados",
+    tech_tools: "Ferramentas & Deploy",
+
+
     services_title: "Serviços",
     service_landing_title: "Landing pages",
     service_landing_desc: "Páginas rápidas, focadas em conversão e com botão de WhatsApp.",
@@ -150,6 +158,14 @@ const traducoes = {
     about_p1: "I have a degree in Systems Analysis and Development, and I enjoy turning ideas into projects that work in the real world. I build solutions from the database to deployment, always looking to learn something new along the way.",
     about_p2: "I value clean code, fast websites, and experiences that work well on both desktop and mobile.",
 
+    
+    technologies_title: "Technologies & Tools",
+    tech_frontend: "Frontend",
+    tech_backend: "Backend",
+    tech_database: "Databases",
+    tech_tools: "Tools & Deployment",
+
+
     services_title: "Services",
     service_landing_title: "Landing pages",
     service_landing_desc: "Fast, conversion-focused pages with a WhatsApp contact button.",
@@ -209,6 +225,14 @@ const traducoes = {
     about_title: "Sobre mí",
     about_p1: "Soy graduado en Análisis y Desarrollo de Sistemas y me gusta transformar ideas en proyectos que funcionan de verdad. Desarrollo soluciones desde la base de datos hasta la publicación, siempre buscando aprender algo nuevo en el camino.",
     about_p2: "Me gusta el código organizado, los sitios rápidos y las experiencias que funcionan bien tanto en el ordenador como en el móvil.",
+
+
+    technologies_title: "Tecnologías y Herramientas",
+    tech_frontend: "Frontend",
+    tech_backend: "Backend",
+    tech_database: "Bases de Datos",
+    tech_tools: "Herramientas y Despliegue",
+
 
     services_title: "Servicios",
     service_landing_title: "Landing pages",

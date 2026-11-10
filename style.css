@@ -314,3 +314,117 @@ header .wrap {
 .idioma-btn {
   gap: 0.4rem;
 }
+
+
+
+.tecnologias {
+  margin-top: 2rem;
+}
+
+.tecnologias h3 {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: var(--text);
+  margin-bottom: 1.8rem;
+}
+
+.tech-grupo {
+  margin-bottom: 1.8rem;
+}
+
+.tech-grupo h4 {
+  font-family: var(--body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--accent-soft);
+  margin-bottom: 0.85rem;
+  letter-spacing: 0.04em;
+}
+
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.7rem;
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.65rem;
+
+  min-width: 0;
+  min-height: 105px;
+  padding: 1rem 0.5rem;
+
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 0.8rem;
+
+  text-align: center;
+
+  transition:
+    transform 0.25s ease,
+    border-color 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+.tech-card img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+  display: block;
+  transition: transform 0.25s ease;
+}
+
+.tech-card span {
+  color: var(--text);
+  font-family: var(--body);
+  font-size: 0.78rem;
+  font-weight: 500;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+/* Efeito ao passar o mouse */
+
+@media (hover: hover) {
+  .tech-card:hover {
+    transform: translateY(-5px);
+    border-color: var(--accent);
+    background: rgba(139, 92, 246, 0.12);
+    box-shadow: 0 10px 25px rgba(139, 92, 246, 0.15);
+  }
+
+  .tech-card:hover img {
+    transform: scale(1.12);
+  }
+}
+
+/* Telas intermediárias */
+
+@media (min-width: 36rem) and (max-width: 47.99rem) {
+  .tech-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Desktop: respeita as duas colunas do Sobre mim */
+
+@media (min-width: 64rem) {
+  .tech-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+/* Acessibilidade */
+
+@media (prefers-reduced-motion: reduce) {
+  .tech-card,
+  .tech-card img {
+    transition: none;
+  }
+}
