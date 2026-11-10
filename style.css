@@ -428,3 +428,45 @@ header .wrap {
     transition: none;
   }
 }
+
+
+/* Tecnologias em largura total */
+
+#sobre .tecnologias {
+  margin-top: 4rem;
+  padding-top: 2.5rem;
+  border-top: 1px solid var(--line);
+}
+
+#sobre .tecnologias h3 {
+  font-size: clamp(1.5rem, 4vw, 2rem);
+  margin-bottom: 2rem;
+}
+
+#sobre .tech-grupo {
+  margin-bottom: 2rem;
+}
+
+/* Distribuição responsiva dos cards */
+
+#sobre .tech-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+@media (min-width: 36rem) {
+  #sobre .tech-grid {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 48rem) {
+  #sobre .tech-grid {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 64rem) {
+  #sobre .tech-grid {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+}
