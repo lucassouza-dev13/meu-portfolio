@@ -470,3 +470,20 @@ header .wrap {
     grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 }
+
+
+/* Ajusta o posicionamento ao navegar para as tecnologias */
+#tecnologias {
+  scroll-margin-top: 5rem;
+}
+
+/* Melhora a distribuição dos links do menu */
+nav {
+  align-items: center;
+  gap: 1.1rem;
+}
+
+nav a {
+  white-space: nowrap;
+}
+

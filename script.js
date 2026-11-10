@@ -74,7 +74,9 @@ const traducoes = {
     nav_projects: "Projetos",
     nav_about: "Sobre",
     nav_services: "Serviços",
-    nav_contact: "Contato",
+    nav_contact: "Contato",   
+    nav_technologies: "Tecnologias",
+
 
     hero_available: "Disponível para novos projetos",
     hero_description: "Sou Lucas, desenvolvedor full-stack. Crio landing pages, sites institucionais e sistemas com login e integração de APIs, do layout ao deploy.",
@@ -143,6 +145,8 @@ const traducoes = {
     nav_about: "About",
     nav_services: "Services",
     nav_contact: "Contact",
+    nav_technologies: "Technologies",
+
 
     hero_available: "Available for new projects",
     hero_description: "I'm Lucas, a full-stack developer. I build landing pages, business websites, and systems with login functionality and API integrations, from design to deployment.",
@@ -211,6 +215,8 @@ const traducoes = {
     nav_about: "Sobre mí",
     nav_services: "Servicios",
     nav_contact: "Contacto",
+    nav_technologies: "Tecnologías",
+
 
     hero_available: "Disponible para nuevos proyectos",
     hero_description: "Soy Lucas, desarrollador full-stack. Creo landing pages, sitios web corporativos y sistemas con inicio de sesión e integración de APIs, desde el diseño hasta el despliegue.",
